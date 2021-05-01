@@ -9,7 +9,7 @@ export default function Sidebar() {
 
     return (
         <>
-            <div className="block sm:hidden absolute top-0 left-0 py-4">
+            <div className="absolute top-0 left-0 py-6">
                 <Button onClick={() => setShowMenu((_) => !_)}>Open</Button>
             </div>
             {showMenu && (
@@ -18,7 +18,7 @@ export default function Sidebar() {
                         <div className="bg-win-gray border-emboss p-1 flex">
                             <div className="w-64 bg-white border-emboss-invert p-4 space-y-8 flex flex-col">
                                 <div className="space-y-4 w-full">
-                                    <div className="block sm:hidden absolute top-0 right-0 py-4">
+                                    <div className="absolute top-0 right-0 py-6">
                                         <Button onClick={() => setShowMenu((_) => !_)}>Close</Button>
                                     </div>
                                     <img src="https://www.zookeeper.finance/assets/zoo_logo.png" alt="" />

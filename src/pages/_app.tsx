@@ -3,8 +3,12 @@ import type { AppProps } from 'next/app'
 import { createContext, useEffect, useState } from 'react'
 import Web3 from 'web3'
 import Head from 'next/head'
+import Ticker from 'react-ticker'
 import { PopWrapper } from '../hooks/usePops'
 import abi from '../lib/abi.json'
+
+import Sidebar from '../components/Sidebar'
+import Header from '../components/Header'
 
 export const Web3Context = createContext({})
 
@@ -51,6 +55,8 @@ export default function App({ Component, pageProps }: AppProps) {
         <>
             <Head>
                 <title>$UNDER, Crypto for Good</title>
+
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/gl-matrix/2.1.0/gl-matrix.js" />
             </Head>
             <Web3Context.Provider
                 value={{
@@ -65,7 +71,15 @@ export default function App({ Component, pageProps }: AppProps) {
                 }}
             >
                 <PopWrapper>
-                    <Component {...pageProps} />
+                    <div className="flex flex-col max-h-screen">
+                        <Header />
+                        <div className="flex flex-1 overflow-hidden">
+                            <div>
+                                <Sidebar />
+                            </div>
+                            <Component {...pageProps} />
+                        </div>
+                    </div>
                 </PopWrapper>
             </Web3Context.Provider>
         </>

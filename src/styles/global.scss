@@ -7,22 +7,24 @@
     -webkit-focus-ring-color: rgba(255, 255, 255, 0) !important;
     outline: none !important;
     box-sizing: border-box;
+    
 }
 
 html,
 body,
 #__next {
-    overflow: hidden;
-    height: 100%;
+    // overflow: hidden;
+    // height: 100%;
     font-size: 16px;
-    line-height: 1.4em;
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
+    line-height: 1.8rem !important;
+    // position: fixed;
+    // top: 0;
+    // bottom: 0;
+    // left: 0;
+    // right: 0;
     font-family: 'Win98', Fallback, sans-serif;
     letter-spacing: 1px;
+    cursor: url('/img/misc/crystal_01j.png'), auto;	
 }
 
 .pixelated {
@@ -183,3 +185,27 @@ body,
   .text-lime {
       color: lime;
   }
+
+  .rainbow-text {
+    background-image: linear-gradient(to left, violet, indigo, blue, green, orange, red);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+
+
+    .text-shadow {
+      text-shadow: 0 2px 4px rgba(0,0,0,0.10);
+    }
+  
+    .text-shadow-md {
+      text-shadow: 0 4px 8px rgba(0,0,0,0.12), 0 2px 4px rgba(0,0,0,0.08);
+    }
+  
+    .text-shadow-lg {
+      text-shadow: 0 15px 30px rgba(0,0,0,0.11), 0 5px 15px rgba(0,0,0,0.08);
+    }
+  
+    .text-shadow-none {
+      text-shadow: none;
+    }
