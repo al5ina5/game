@@ -71,9 +71,9 @@ export default function App({ Component, pageProps }: AppProps) {
                 }}
             >
                 <PopWrapper>
-                    <div className="flex flex-col max-h-screen">
+                    <div className="flex flex-col max-h-screen h-full">
                         <Header />
-                        <div className="flex flex-1 overflow-hidden">
+                        <div className="flex flex-1 overflow-hidden h-full">
                             <div>
                                 <Sidebar />
                             </div>

@@ -24,7 +24,7 @@ export default function App() {
 
     return (
         <>
-            {!account && (
+            {/* {!account && (
                 <Modal
                     title="Sign-in to get started"
                     children={
@@ -34,7 +34,7 @@ export default function App() {
                         </div>
                     }
                 />
-            )}
+            )} */}
 
             {/* {account && (
                 <>
@@ -60,7 +60,7 @@ export default function App() {
                 </>
             )} */}
 
-            <div className="flex flex-col h-full font-win">
+            <div className="flex flex-1 flex-col h-full font-win">
                 <div className="bg-win-gray border-emboss p-2 flex text-xs">
                     <div className="flex-1" />
                     <div className="flex space-x-4">

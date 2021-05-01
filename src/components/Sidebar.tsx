@@ -9,12 +9,12 @@ export default function Sidebar() {
 
     return (
         <>
-            <div className="absolute top-0 left-0 py-6">
+            <div className="absolute top-0 left-0 py-6 z-30">
                 <Button onClick={() => setShowMenu((_) => !_)}>Open</Button>
             </div>
             {showMenu && (
                 <>
-                    <div className="flex absolute sm:relative h-full">
+                    <div className="flex absolute sm:relative h-full z-30">
                         <div className="bg-win-gray border-emboss p-1 flex">
                             <div className="w-64 bg-white border-emboss-invert p-4 space-y-8 flex flex-col">
                                 <div className="space-y-4 w-full">

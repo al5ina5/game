@@ -36,7 +36,7 @@ export default function Index() {
 
             <div className="p-12 space-y-8">
                 <div className="rainbow-text text-shadow text-2xl">$UNDER, the official currency of the UNDERVERSE, is cool as f#%k! for many reasons, including...</div>
-                <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4">
+                <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-4">
                     <div className="bg-win-gray p-4 border-emboss">
                         <p className="text-2xl font-bold">It is a real currency, much like any other crypto-currency such as Bitcoin and Ethereum</p>
                         <p>It'll be here forever.</p>
@@ -51,7 +51,7 @@ export default function Index() {
                     </div>
                     <div className="bg-gradient-to-br from-purple-400 via-pink-500 to-red-500 text-white bg-gray p-6 border-emboss space-y-2">
                         <p className="text-2xl font-bold">The $UNDER game is coming</p>
-                        <p>That means that at any time nearly 10%+ of the total supply in circulation is donated for the betterment of our planet.</p>
+                        <p>Raise your personalized animorph NFT using in-game tokens backed by your $UNDER. Always free-to-play.</p>
                         <div>
                             <Button>Get notified</Button>
                         </div>
